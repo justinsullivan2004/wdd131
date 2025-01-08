@@ -1,0 +1,41 @@
+.content {
+    text-align: center;
+    font-style: 'Times New Roman';
+    border: 1px solid black;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    line-height: 1.5;
+}
+header {
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    /* border-width: 600px; */
+}
+h2 {
+    font-size: 16px;
+    color: #006EB6;
+}
+main {
+    display: inline-block;
+    max-width: 600px;
+    /* use padding and margin to format correctly */
+    padding: 16px;
+    margin: 16px auto;
+    text-align: left;
+}
+main p, main ol {
+    margin: 16px 0;
+}
+li {
+    margin: 16px;
+}
+.logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
