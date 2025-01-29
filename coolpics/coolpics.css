@@ -62,15 +62,59 @@ img {
     border: 10px solid white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
+.menu.hide {
+    display: none;
+}
 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
 }
+.menu-button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
 a {
     margin: 10px;
 }
+.viewer {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10; 
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Close button (X) styling */
+.close-viewer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Image inside the modal */
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+} 
+
 @media screen and (min-width: 700px) {
     .gallery {
         grid-template-columns: 1fr 1fr;
@@ -83,7 +127,7 @@ a {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    p {
+    .menu-button {
         display: none;
     }
     .menu {
@@ -92,4 +136,10 @@ a {
     a {
         margin: 50px;
     }
+
+    .modal-image {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
 }
