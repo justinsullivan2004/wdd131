@@ -28,14 +28,12 @@ nav a {
 .layout {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     text-align: center;
     margin-top: 40px;
     font-family: var(--Body-Style);
 }
 .filters {
     grid-column: 3;
-    grid-row: 1;
     border:2px solid var(--Border-Color);
     padding: 10px;
     text-align: right;
@@ -47,26 +45,31 @@ nav a {
 .information {
     grid-column: 1;  
     border-right: 2px solid var(--Border-Color);  
+    text-align: right;
+    padding-right: 20px;
 }
-#book1info, .book1 {
-    grid-row: 1;
-}
-#book2info, .book2 {
-    grid-row: 2;
-
-}
-#book3info, .book3 {
-    grid-row: 3;
-}
+.book {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns inside the book container */
+    gap: 10px;
+  }
 .books {
     grid-column: 2;
 }
-.books, .information {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+h2 {
+    color: var(--Title-Color);
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.book-description {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 img {
     width: 225px;
     height: auto;
 }
+
