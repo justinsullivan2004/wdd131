@@ -1,0 +1,88 @@
+form {
+    display: grid;
+    grid-template-columns: 100px, 300px, 100px;
+    max-width: 900px; /* Sets the max width of the grid */
+    width: 100%;
+}
+#cardFront, #cardBack {
+    background-color: lightgray;
+    height: 300px;
+}
+#cardFront {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+p {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: start;
+    padding-left: 30px;
+}
+#cardNumberContainer {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding-left: 30px;
+
+}
+#cardNum {
+    width: 80%;
+}
+#cardHolderContainer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-left: 30px;
+
+}
+#expirationContainer {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#expiration {
+    width: 30px;
+}
+img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+label {
+    display: block;
+}
+
+#cardBack {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 15px;
+
+}
+#banner {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    margin-top: 50px;
+}
+#ccvContainer {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+#ccv {
+    width: 30px;
+}
+
+button {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    border-radius: 15px;
+    
+}
+
