@@ -18,6 +18,7 @@ export const aCourse = {
       instructor: "Sis A",
     },
   ],
+  
   enrollStudent: function (sectionNum) {
     // find the right section...Array.findIndex will work here
     const sectionIndex = this.sections.findIndex(
