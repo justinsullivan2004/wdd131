@@ -341,6 +341,5 @@ function init() {
   recipeContainer.innerHTML = '';
   renderRecipes(recipe);
   document.querySelector("#searchButton").addEventListener("click", searchHandler);
-
 }
 init();

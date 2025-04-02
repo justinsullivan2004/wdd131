@@ -1,0 +1,82 @@
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #1B263B;
+    --secondary-color: #778D89;
+    --accent1-color: #E0E1DD;
+    --accent2-color: white;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Times New Roman, Georgia, Garamond";
+    --paragraph-font: "Times New Roman, Georgia, Garamond";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+  }
+  header {
+    background: var(--accent1-color);
+    font-family: var(--heading-font);
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  #websiteLogo {
+    width: 150px;
+    height: auto;
+    text-align: left;
+  }
+  header p {
+    margin: 0 auto;
+  }
+  nav {
+    margin: 0 auto;
+  }
+  a {
+    padding: 20px;
+  }
+  form {
+    text-align: center;
+    margin: 50px;
+  }
+  input {
+    width: 300px;
+    height: 30px;
+  }
+  .gameDisplay {
+    font-family: var(--paragraph-font);
+    margin: 0 auto;
+    max-width: 300px;
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  img {
+    width: 300px;
+    height: auto;
+    border: 2px solid var(--primary-color);
+  }
+footer {
+    background: var(--accent1-color);
+    display: flex;
+    justify-content: space-between;
+  }
+  footer p {
+    padding: 20px;
+  }
+  footer img {
+    width: 60px;
+    border: none;
+    padding: 10px;
+  }
